@@ -12,7 +12,7 @@
     
     
     
-    <title>tags | Xs_Y</title>
+    <title>Xs_Y</title>
     <link href="http://example.com" rel="prefetch" />
 
     
@@ -101,7 +101,7 @@
             <ul class="nav navbar-nav" id="menu-gal">
                 
                 
-                <li class="">
+                <li class="current">
                     <a href="/">
                         <i class="fa fa-home"></i>首页
                     </a>
@@ -176,42 +176,133 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <!-- 搜索页面(尽可能接近ZanBlog搜索功能) -->
+                    
+<div class="alert well fade in" id="gal-issue" role="alert">
+    <!-- TODO 添加关闭公告框功能 -->
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <!-- 这里自行配置公告内容 -->
+    这里是公告内容
+    <br>
+    配置相关说明请看<strong>_config.yml</strong>
+    <!-- 自行配置公告内容结束 -->
+</div>
 
-
-<article class="article well article-body" id="article">
-    <!-- 大型设备详细文章 -->
-    <div class="hidden-xs">
+<div id="article-list">
+     
+     
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    
+    <div class="data-article hidden-xs">
+        <span class="month">05月</span>
+        <span class="day">08</span>
+    </div>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/tags/index.html">tags</a>
+                <a href="/2022/05/08/%E5%91%8A%E7%99%BD/">
+                    <span>告白</span>
+                </a>
             </h1>
         </div>
         <div class="tag-article">
+            
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2022-05-05
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E7%88%B1%E6%83%85/">爱情</a>
+                
             </span>
+            
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/2022/05/08/%E5%91%8A%E7%99%BD/#comments">739</a>
+            </span>-->
         </div>
-    </div>
-    <!-- 小型设备详细文章 -->
-    <div class="visible-xs">
-        <center>
-            <div class="title-article">
-                <h4>
-                    <a href="/tags/index.html">tags</a>
-                </h4>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/2022/05/08/%E5%91%8A%E7%99%BD/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/preview4.jpg" alt="告白">
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
             </div>
-            <p>
-                <i class="fa fa-calendar"></i> 2022-05-05
-            </p>
+        </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/2022/05/08/%E5%91%8A%E7%99%BD/">
+                        <span>告白</span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2022-05-08
         </center>
-    </div>
-    <div class="content-article">
+        <p></p>
+        <p></p>
+        <center>
+            
+            <i class="fa fa-tags"></i>
+            
+            <a href="/tags/%E7%88%B1%E6%83%85/">爱情</a>
+            
+            
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/2022/05/08/%E5%91%8A%E7%99%BD/">
+                    
+                    <img src="/imgs/preview/preview2.jpg" alt="告白">
+                </a>
+            </p>
+        </div>
         
-    </div>
-</article>
+        <a class="btn btn-danger pull-right read-more btn-block" href="/2022/05/08/%E5%91%8A%E7%99%BD/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+</div>
+<!-- 前方最多7个 < 1 2 3 4 5 6 -->
+<!-- 前方超过第7页则分为 < 1 ... (n - 3) (n - 2) (n - 1) n, 此时前面为固定的6个 -->
+
+<!-- 后方最多8个 (n + 1) 到 (n + 7) > -->
+<!-- 如果末页和当前页相差超过7, 此时后面为固定的6个, (n + 1) (n + 2) (n + 3) ... total > -->
 
 
+
+<div id="gal-pagination" class="clearfix">
+    <ul class="pagination pagination-gal pull-right">
+        
+        
+        
+        
+        <li class="current">
+            <span>1</span>
+        </li>
+        
+        
+        
+        
+    </ul>
+</div>
+
+<!-- 加上这段代码原因： gitment在首页加载时, 如果找不到对应的控件会报错，此处加上，同时设置为none，防止报错 -->   
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -307,17 +398,17 @@
 
                 
                 <li>
-                    <a href="/tags/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/tags/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -325,7 +416,7 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E7%88%B1%E6%83%85/" style="font-size: 9.59223629754828px;" class="tag-cloud-link">爱情</a>
+    <a href="/tags/%E7%88%B1%E6%83%85/" style="font-size: 10.095306685564594px;" class="tag-cloud-link">爱情</a>
     
 </div>
                 
