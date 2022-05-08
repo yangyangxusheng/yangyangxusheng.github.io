@@ -12,7 +12,7 @@
     
     
     
-    <title>archive_a | Xs_Y</title>
+    <title>Python数据结构1：算法复杂度做算法分析：大O表示算法 | Xs_Y</title>
     <link href="http://example.com" rel="prefetch" />
 
     
@@ -109,7 +109,7 @@
                 
                 
                 
-                <li class="current">
+                <li class="">
                     <a href="/archives">
                         <i class="fa fa-archive"></i>归档
                     </a>
@@ -184,19 +184,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-archive">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="http://example.com">Xs_Y</a>
         >
-        <span>归档</span>
+        <span>Python数据结构1：算法复杂度做算法分析：大O表示算法</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/archives">归档</a>
+                <a href="/2022/05/05/Python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%841%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%81%9A%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%EF%BC%9A%E5%A4%A7O%E8%A1%A8%E7%A4%BA%E7%AE%97%E6%B3%95/">Python数据结构1：算法复杂度做算法分析：大O表示算法</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2022-05-05
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -204,43 +219,63 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/archives">归档</a>
+                    <a href="/2022/05/05/Python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%841%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%81%9A%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%EF%BC%9A%E5%A4%A7O%E8%A1%A8%E7%A4%BA%E7%AE%97%E6%B3%95/">Python数据结构1：算法复杂度做算法分析：大O表示算法</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2022-05-05
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+                
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        
-        
-            <h1 style="font-size: 24px; margin-top: 40px;">2022年</h1>
-            
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-             
-             
-                        <a href="/2022/05/05/Python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%841%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%81%9A%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%EF%BC%9A%E5%A4%A7O%E8%A1%A8%E7%A4%BA%E7%AE%97%E6%B3%95/">Python数据结构1：算法复杂度做算法分析：大O表示算法</a>
-                        <br>
-            
-             
-                        <a href="/2022/05/05/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/">第一个博客</a>
-                        <br>
-            
-             
-                        <a href="/2022/05/05/page/">page</a>
-                        <br>
-            
-             
-                        <a href="/2022/05/05/pagetags/">pagetags</a>
-                        <br>
-            
-             
-                        <a href="/2022/05/05/hello-world/">Hello World</a>
-                        <br>
-            
-                    </div>
-        
+    <div class="content-article">
+        <h1 id="1-评价算法标题好坏的指标"><a href="#1-评价算法标题好坏的指标" class="headerlink" title="1. 评价算法标题好坏的指标"></a>1. 评价算法标题好坏的指标</h1><h2 id="1-1-计算资源指标"><a href="#1-1-计算资源指标" class="headerlink" title="1.1 计算资源指标"></a>1.1 计算资源指标</h2><h3 id="1-1-1-存储空间或内存"><a href="#1-1-1-存储空间或内存" class="headerlink" title="1.1.1  存储空间或内存 "></a>1.1.1 <font color='red'> 存储空间或内存 </font></h3><p>由于<strong>不好区分</strong>是数据本来就需要很大的空间，还是由于算法太垃圾占用了太多的空间。所以<strong>通常不用这个描述</strong>。</p>
+<h3 id="1-1-2-算法执行时间"><a href="#1-1-2-算法执行时间" class="headerlink" title="1.1.2  算法执行时间 "></a>1.1.2 <font color='red'> 算法执行时间 </font></h3><p>通常用这个描述计算资源指标<br>在python中可以用time模块统计运行时间。<br>time.time()是系统的时间。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line">start = time.time()</span><br><span class="line">需要执行的程序</span><br><span class="line">end = time.time()</span><br><span class="line"><span class="built_in">print</span>(end - start)</span><br></pre></td></tr></table></figure>
+<p>end - start 就是程序运行的时间。通常我们执行多次程序，避免单次执行程序的偏差。</p>
+<h1 id="2-迭代算法和非迭代算法的对比"><a href="#2-迭代算法和非迭代算法的对比" class="headerlink" title="2. 迭代算法和非迭代算法的对比"></a>2. 迭代算法和非迭代算法的对比</h1><h2 id="2-1-迭代算法"><a href="#2-1-迭代算法" class="headerlink" title="2.1 迭代算法"></a>2.1 迭代算法</h2><p>迭代算法就是说下一次的结果是基于上一次来的，一般会有个循环<br>如<font color='red'>迭代的累加求和算法</font></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">sumOfN</span>(<span class="params">n</span>):</span><br><span class="line">	start = time.time()</span><br><span class="line">	theSum = <span class="number">0</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, n + <span class="number">1</span>):</span><br><span class="line">		theSum = theSum + i</span><br><span class="line">	end = time.time()</span><br><span class="line">	<span class="keyword">return</span> theSum, end - start</span><br><span class="line"><span class="built_in">print</span>(sumOfN(<span class="number">10000000</span>)) <span class="comment"># 求 1-10000000的累加和并计算这个程序的运行时间</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-2-非迭代算法"><a href="#2-2-非迭代算法" class="headerlink" title="2.2 非迭代算法"></a>2.2 非迭代算法</h2><p>非迭代算法直接一步到位计算，不需要循环</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">sumOfN</span>(<span class="params">n</span>):</span><br><span class="line">	start = time.time()</span><br><span class="line">	theSum = <span class="number">0.5</span> * n * (n + <span class="number">1</span>)</span><br><span class="line">	end = time.time()</span><br><span class="line">	<span class="keyword">return</span> theSum, end - start</span><br><span class="line"><span class="built_in">print</span>(sumOfN(<span class="number">10000000</span>)) <span class="comment"># 求 1-10000000的累加和并计算这个程序的运行时间</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-3-同一问题迭代和非迭代的对比"><a href="#2-3-同一问题迭代和非迭代的对比" class="headerlink" title="2.3 同一问题迭代和非迭代的对比"></a>2.3 同一问题迭代和非迭代的对比</h2><p>上面的第二个程序比第一个程序运行快太多了。所以第二种比较好，但是第二个公式可能比较难想出来。</p>
+<h1 id="3-用执行时间衡量算法好坏的问题"><a href="#3-用执行时间衡量算法好坏的问题" class="headerlink" title="3. 用执行时间衡量算法好坏的问题"></a>3. 用执行时间衡量算法好坏的问题</h1><p>不同的编程语言、平台、机器，跑同一算法的时间有很大区别。因此只用执行时间，是有失偏颇的。我们需要一种更好的方法（<strong>与具体的机器、程序、运行时段等都无关的方法</strong>）来评价算法的好坏。</p>
+<h1 id="4-大O表示法-算法复杂度"><a href="#4-大O表示法-算法复杂度" class="headerlink" title="4. 大O表示法: 算法复杂度"></a>4. <font color='red'><strong>大O表示法</strong></font>: 算法复杂度</h1><h2 id="4-1-赋值语句的个数衡量算法"><a href="#4-1-赋值语句的个数衡量算法" class="headerlink" title="4.1 赋值语句的个数衡量算法"></a>4.1 赋值语句的个数衡量算法</h2><p>赋值语句如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = b</span><br></pre></td></tr></table></figure>
+<p>表示把b的值赋给a，这个过程既包括计算又包括存储。<br>赋值语句是一个合适的算法度量指标，他在所有的平台上都是一样的。赋值语句多，执行时间长，反之短 。</p>
+<p>对于上述的$sumOfN(n)$函数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># import time #1</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">sumOfN</span>(<span class="params">n</span>): <span class="comment">#2</span></span><br><span class="line">	<span class="comment"># start = time.time() #3</span></span><br><span class="line">	theSum = <span class="number">0</span> <span class="comment">#4 执行一次</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, n + <span class="number">1</span>): <span class="comment">#5</span></span><br><span class="line">		theSum = theSum + i <span class="comment">#6 执行n次</span></span><br><span class="line">	<span class="comment"># end = time.time() #7</span></span><br><span class="line">	<span class="keyword">return</span> theSum <span class="comment"># end - start #8</span></span><br><span class="line"><span class="built_in">print</span>(sumOfN(<span class="number">10000000</span>)) <span class="comment"># 求 1-10000000的累加和并计算这个程序的运行时间 #9</span></span><br></pre></td></tr></table></figure>
+<p>n是<font color='red'><strong>问题规模</strong></font>，第 4，6行是赋值语句<br>因此 $sumOfN(n)$的赋值语句数量是$T(n) &#x3D;n+1$</p>
+<h2 id="4-2-问题规模"><a href="#4-2-问题规模" class="headerlink" title="4.2 问题规模"></a>4.2 <font color='red'><strong>问题规模</strong></font></h2><p><font color='red'><strong>问题规模</strong></font>是影响算法执行时间的主要因素。对上述得累计求和算法，需要求和的n的个数就是<font color='red'><strong>问题规模</strong></font>。<br>如，求1000个整数的累计和比1000000个整数的累计和，是同一问题的小规模。<br><font color='red'><strong>算法分析</strong></font>就是要找出<font color='red'><strong>问题规模</strong></font>怎么影响算法的<font color='red'><strong>执行时间</strong></font></p>
+<h2 id="4-3-数量级函数"><a href="#4-3-数量级函数" class="headerlink" title="4.3 数量级函数"></a>4.3 数量级函数</h2><p>$T(n)$的精确值不重要，他的<strong>主导</strong>部分最重要，如 $T(n) &#x3D; n + 1$，n很大时，1就对算法的影响就忽略不计了。</p>
+<p><font color='red'><strong>大O表示法</strong></font>：数量级函数就是只取$T(n)$中关于n的部分，记作$O(f(n))$，$f(n)$是$T(n)$中关于$n$的部分</p>
+<p>如<br>$T(n) &#x3D; n + 1$ 是 $O(n)$<br>$T(n) &#x3D; 5n^2 + 27n + 1$ 是 $O(n^2)$</p>
+<h2 id="4-4-影响算法执行时间的其他因素"><a href="#4-4-影响算法执行时间的其他因素" class="headerlink" title="4.4 影响算法执行时间的其他因素"></a>4.4 影响算法执行时间的其他因素</h2><p>有时不仅问题规模决定运行时间，一些具体的数据也可能会影响算法运行时间<br>如排序问题中，有的数据集已经只有个别的数没排好顺序，有的数据集有特别的多的数没排好顺序。<br>这时我们将各个数据集的情况求<font color='red'><strong>平均</strong></font>，用平均体现算法性能。</p>
+<h2 id="4-5-最常见的7种大O数量级函数"><a href="#4-5-最常见的7种大O数量级函数" class="headerlink" title="4.5 最常见的7种大O数量级函数"></a>4.5 最常见的7种大O数量级函数</h2><center><img src="https://img-blog.csdnimg.cn/2d642c56c2cf48d1b91ee08225da843a.png" width ="30%" ></center>
+
+<center><img src="https://img-blog.csdnimg.cn/4eb7c32a347f48ef917392afcd0597e3.png" width ="20%" ></center>
+
+<h2 id="4-5-小练习"><a href="#4-5-小练习" class="headerlink" title="4.5 小练习"></a>4.5 小练习</h2><p>求这段代码的复杂度</p>
+<center><img src="https://img-blog.csdnimg.cn/a1707f52b4b34ed2b8c104ef1e754c05.png" width ="30%" ></center>
+
+<p>解:<br>赋值语句包括四部分<br>$T(n) &#x3D; 3 + 3n^2 + 2n + 1 -&gt; O(n^2)$</p>
+<center><img src="https://img-blog.csdnimg.cn/61d93187b0e649dea272feea93d5ea02.png" width ="40%" ></center>
+
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><p>本文的知识来源于B站视频 【慕课+课堂实录】数据结构与算法Python版-北京大学-陈斌-字幕校对-【完结！】，是对陈斌老师课程的复习总结。</p>
+
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -383,17 +418,17 @@
 
                 
                 <li>
-                    <a href="/archives/2022/05/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2022/05/05/Python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%841%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%81%9A%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%EF%BC%9A%E5%A4%A7O%E8%A1%A8%E7%A4%BA%E7%AE%97%E6%B3%95/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/2022/05/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2022/05/05/Python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%841%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%81%9A%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%EF%BC%9A%E5%A4%A7O%E8%A1%A8%E7%A4%BA%E7%AE%97%E6%B3%95/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/2022/05/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2022/05/05/Python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%841%EF%BC%9A%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%81%9A%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%EF%BC%9A%E5%A4%A7O%E8%A1%A8%E7%A4%BA%E7%AE%97%E6%B3%95/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -401,9 +436,9 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 16.83724672518136px;" class="tag-cloud-link">学习</a>
+    <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 16.3338198133606px;" class="tag-cloud-link">学习</a>
     
-    <a href="/tags/%E8%A1%A8%E7%99%BD/" style="font-size: 11.405956857463114px;" class="tag-cloud-link">表白</a>
+    <a href="/tags/%E8%A1%A8%E7%99%BD/" style="font-size: 19.731929302853388px;" class="tag-cloud-link">表白</a>
     
 </div>
                 
